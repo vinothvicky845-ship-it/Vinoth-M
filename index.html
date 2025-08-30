@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Digital Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <h2 class="logo">MyPortfolio</h2>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <div class="intro">
+      <h1>Hello, I am <span>Vinoth  M</span></h1>
+      <p>Computer Science Student</p>
+      <button onclick="scrollToSection('projects')">My Projects</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <ul style="list-style-type: circle;">
+    <li>I am Computer Science student of Government Arts and Science College, Vanur.</li>
+    <li>My Aim is become a Animator or Game developer.</li>
+    </ul>
+    <ul>
+      <li>🎓 Education: B.Sc. Computer Science</li>
+      <li>💻 Interested in: Web Development, AI, Data Science</li>
+      <li>🌍 contry: India</li>
+    </ul>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Python</div>
+      <div class="skill">C++</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-card">
+      <h3>Simple HTML Page</h3>
+      <p>My simple html page with Links,Picture,Order & Unorder Lists.</p>
+      <a href=" https://codepen.io/Vinoth007-Vinoth007/pen/EaVdywz" target="_blank">My project</a>
+    </div>
+    <div class="project-card">
+      <h3>HTML for Css Types</h3>
+      <p>My html page with types of css</p>
+      <a href="https://codepen.io/Vinoth007-Vinoth007/pen/RNWeRQG" target="_blank">My project</a>
+    </div>
+    <div class="project-card">
+      <h3>FWD-form</h3>
+      <p>My html page for Fundemental Of Web Development Regestration Form.</p>
+      <a href="https://codepen.io/Vinoth007-Vinoth007/pen/PwPyzQm" target="_blank">my project</a>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <div class="certificates-grid">
+      <a href="https://www.credly.com/badges/152a3fa4-e569-4b05-9f8c-60feca8c2204" target="_blank">MY IBM CERTIFICATE</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="vinothvicky845@gmail.com">vinothvicky845@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 M.Vinoth | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

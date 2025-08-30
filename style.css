@@ -1,0 +1,140 @@
+* {
+  margin: 2;
+  padding: 2;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 2;
+  background: #4fe0f0;
+  color: #000000;
+}
+
+/* Navbar */
+header {
+  background: linear-gradient(to right, #e6f239, #dfdfe0);
+  color: #f1f106;
+  padding: 10px 20px;
+  position: sticky;
+  top: 2;
+  z-index: 1000;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  margin: 0 15px;
+}
+.nav-links a {
+  color: rgba(63, 175, 250, 0.797);
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Home */
+.home {
+  background: linear-gradient(to right, #c0f8ac, #edeff3);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 100px 20px;
+}
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.home h1 span {
+  color: rgb(39, 63, 244);
+}
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: rgb(234, 20, 5);
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+}
+h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+.skill {
+  background: #fb7d3e;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  font-weight: bold;
+}
+
+/* Projects */
+.project-card {
+  background: #c3fae4;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Certificates */
+.certificates-card {
+  background: #00bbff;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  .nav-links li {
+    margin: 10px 0;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
